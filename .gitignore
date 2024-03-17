@@ -1,0 +1,12 @@
+# js libraries
+node_modules/
+
+# python virtual env
+venv/
+.venv/
+
+# credentials
+.env
+
+# python byte cache files
+*.py[oc]

@@ -1,0 +1,162 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    --bg-color: #e6e6e6;
+    --text-color: #080808;
+    --btn-color: #33333399;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.wrapper .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.title h1 {
+    font-size: 36px;
+}
+
+.title h2 {
+    font-size: 24px;
+}
+
+.introduction h3 {
+    padding-top: 280px;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 10px 70px;
+    font-size: 24px;
+    background-color: var(--btn-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.btn:hover {
+    top: -10px;
+}
+
+
+.proceed-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 3;
+}
+
+.btn.proceed {
+    background-color: var(--btn-color); 
+    color: var(--bg-color);
+}
+
+
+/* video player css */
+#videoPlayer {
+    width: calc(100% - 100px);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 100px;
+}
+
+#videoPlayer video {
+    width: 100%;
+    max-height: 500px;
+    min-height: 500px;
+    position: relative;
+    height: auto;
+}
+
+#videoPlayer #dropArea {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #33333333;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    transition: .3s;
+}
+
+/* sidenav css */
+.wrapper .sidenav {
+    min-width: 250px;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    border-right: solid 1px #33333333;
+}
+
+.sidenav h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.sidenav .sidenav-links div { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: light;
+    color: var(--text-color);
+    border-left: solid 3px #33333300;
+    transition: .3s;
+}
+
+.activelink {
+    border-left: solid 3px #333333 !important;
+}
+
+.sidenav-links div i { 
+    font-size: 20px;
+    color: var(--text-color);
+}
