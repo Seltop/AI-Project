@@ -44,9 +44,8 @@ body {
 }
 
 .introduction h3 {
-    padding-top: 280px;
+    padding-top: 260px;
     font-size: 14px;
-    padding-bottom: 50px;
 }
 
 .btn {
@@ -78,6 +77,31 @@ body {
 .btn.proceed {
     background-color: var(--btn-color); 
     color: var(--bg-color);
+}
+
+/* reference image css */
+#imageDropArea {
+    width: calc(100% - 100px);
+    height: 500px; /* Adjust if necessary for image drop area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #33333333;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    transition: .3s;
+}
+
+/* If imageDropArea is within a container that needs specific styling */
+#imageUploader {
+    /* Add container specific styles here if necessary */
+    padding-top: 25px;
+    padding-left: 100px;
 }
 
 

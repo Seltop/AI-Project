@@ -54,6 +54,10 @@ function initializeVideoPlayer() {
                 videoElement.controls = true;
                 videoPlayer.innerHTML = '';
                 videoPlayer.appendChild(videoElement);
+                
+                videoElement.addEventListener('loadedmetadata', function() {
+                    $('#proceedButton').prop('disabled', false);
+                });
             }
         }
     }
